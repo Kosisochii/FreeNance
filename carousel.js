@@ -24,3 +24,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(showNextImage, 3000);
 });
+

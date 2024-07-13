@@ -43,30 +43,28 @@
 
             <!-- <div class="menu_main"> -->
               <div class="navContainer">
-                <div><a href="#" style="color: white">Home</a></div>
-                 <div><a href="#" style="color: white">About</a></div>
-                  <div id="contactContainer">
-                    <a href="#" style="color: white">Contact</a>
-                  </div>
-                <!-- <div>
-                  <div class="hamburger"></div>
-                </div> -->
-            </div>
-            <!-- </div> -->
-        </div>
+                <div id="linkContainer">
+                    <div><a href="#" style="color: white">Home</a></div>
+                    <div><a href="#" style="color: white">About</a></div>
+                    <div><a href="#" style="color: white">Contact</a></div>
+                </div>
 
-          <div class="">
-            <ul>
-              <div id="myNav" class="overlay">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-              </div>
-              </div>
-            </ul>
-          </div>
+                <div>
+                  <img src="images/toggle-icon.png" alt="hamburger" class="hamburger">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobileNav">
+      <div id="mobileContainer">
+        <div style="text-align: right;">
+          <span class="cancelBtn">X</span>
+        </div>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Contact</a></p>
+      </div>
     </div>
 
 
@@ -112,7 +110,7 @@
           <h1 class="banner_taital_1" style="color: #004e64;">Our Priority</h1>
           <p class="banner_text" style="color: #004e64;">Discover community banking solutions tailored to your needs.</p>
           <div class="contact_bt">
-            <a href="contact.html" style="color: #7ae582;">Join Us Today ➡<span class="contact_padding"><img src="images/contact-icon.png"></span></a></div>
+            <a href="contact.html" style="color: #7ae582;">Join Us Today</a></div>
         </div>
 
       </div>
@@ -255,7 +253,7 @@
           <div class="col-md-6">
             <h1 class="services_taital"><span style="color: black;">What is </span> <span style="color: #00afc5">Freenance</span></h1>
             <p class="ipsum_text">Freenance is an innovative financial platform designed to empower users by providing a comprehensive ecosystem for saving, investing, and borrowing. Our mission is to foster financial freedom and support by creating a seamless, integrated platform where users can efficiently manage their finances.,</p>
-            <div class="contact_bt_1"><a href="#">READ MORE<span class="contact_padding"><img src="images/contact-icon1.png"></span></a></div>
+            <div class="contact_bt_1"><a href="#">READ MORE➡</a></div>
           </div>
         </div>
       </div>
@@ -282,7 +280,6 @@
                   <img src="images/customerSupport.jpg" alt="CustomerSuportImg" class="humanImg">
                 </div>
                 <h1 class="client_taital"> Customer Support</h1>
-                <!-- <h4 class="client_text">Happy clients</h4> -->
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -450,11 +447,6 @@
                 <label for="phone">Phone</label>
                 <input type="text" id="phone" name="phone" required>
                 
-                <label for="country">Country</label>
-                <select id="country" name="country" required>
-                    <option value="">--Select a country--</option>
-                </select>
-                
                 <label for="company">Company</label>
                 <input type="text" id="company" name="company" required>
                 
@@ -464,7 +456,9 @@
                 <label for="message">Anything else?</label>
                 <textarea id="message" name="message" placeholder="It would be great to hear more about your project"></textarea>
                 
-                <button type="submit" id="wishlistBtn">Submit</button>
+                <div class="wishlistBtnContainer">
+                  <button type="submit" id="wishlistBtn">Submit</button>
+                </div>
             </form>
         </div>
     </div>

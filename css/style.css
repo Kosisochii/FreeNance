@@ -28,9 +28,8 @@
 }
 
 .caro-img {
-    width: 60vw;
-    height: 85vh;
     margin: 0 auto;
+    margin-top: 80px;
 }
 
 .logoContainer{
@@ -42,8 +41,15 @@
     right: 0;
     top: 0;
     padding: 30px 70px;
-    z-index: 300;
+    z-index: 100;
     background-color: black;
+}
+
+#linkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
 }
 
 .navContainer{
@@ -53,6 +59,46 @@
     gap: 10rem;
 }
 
+.mobileNav{
+    position: fixed;
+    background: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.mobileNav a{
+    text-decoration: none;
+    color: white;
+}
+
+#mobileContainer{
+    margin: 30px;
+    color: white;
+}
+
+#mobileContainer p{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.cancelBtn{
+    margin: 20px 0 500px;
+    text-align: right;
+    font-size: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+.show{
+    display: block;
+}
 .waitlistContainer{
     display: flex;
     width: 100%;
@@ -80,7 +126,6 @@
 }
 
 .logos img {
-    margin-right: 10px;
     height: 40px;
 }
 
@@ -126,8 +171,12 @@
     margin-right: 10px;
 }
 
+.wishlistBtnContainer{
+    text-align: right;
+}
+
 #wishlistBtn {
-    padding: 10px;
+    padding: 10px 30px;
     border: none;
     border-radius: 5px;
     background: #004e64;
@@ -147,7 +196,7 @@ button:hover {
 
 header{
     margin-top: 105px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #logoImg{

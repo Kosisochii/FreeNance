@@ -438,16 +438,28 @@ ul.link li {
 .menu_text { padding-top: 0px; }
 }
 
-/* @media screen and (min-width: 500px) { */
-    /* .navContainer{
-        display: none;
-    } */
+ @media (min-width: 100px) and (max-width: 811px) {
 
-    /* .hamburger{
-        position: relative;
-        width: 100px;
-        background: white;
-        height: 100px;
+    #linkContainer{
+        display: none;
     }
-     */
-/* } */
+    
+    .logoContainer{
+    padding: 30px 30px;
+    }
+
+    .waitlistContainer .left-section{
+        display: none;
+    }
+
+    .waitlistContainer .right-section{
+        padding: 10px 50px;
+    }
+}
+
+
+/* @media (min-width: 952px) and (max-width: 1600px) {
+    .navContainer{
+        display: block;
+    }
+} */
