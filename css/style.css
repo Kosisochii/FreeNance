@@ -22,36 +22,140 @@
      transition: ease all 0.5s;
 }
 
+.humanImg{
+    width: 100%;
+    height: 240px;
+}
+
 .caro-img {
-    width: 60vw; /* Set width to 60% of viewport width */
-    margin: 0 auto; /* Center align the images */
+    width: 60vw;
+    height: 85vh;
+    margin: 0 auto;
 }
 
 .logoContainer{
     display: flex;
     align-items: center;
-    padding: 0 90px;
+    justify-content: space-between;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    padding: 20px;
+    padding: 30px 70px;
     z-index: 300;
-    background-color: #004e64;
+    background-color: black;
 }
 
-.registerContainer{
+.navContainer{
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.waitlistContainer{
+    display: flex;
+    overflow: hidden;
+}
+
+.left-section {
+    padding: 20px;
+    flex: 2;
+    background-image: url("../images/STATIC\ BG\ IMAGE2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    margin-bottom: 10px;
+}
+
+.logos img {
+    margin-right: 10px;
+    height: 40px;
+}
+
+.right-section {
+    padding: 20px;
+    flex: 1;
+    background: #00a5cf;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm h2 {
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    margin-bottom: 5px;
+}
+
+#contactForm input, #contactForm select, #contactForm textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contactForm textarea {
+    height: 100px;
+    resize: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+#wishlistBtn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #004e64;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #2f855a;
+}
+
+.navContainer a{
+    font-size: 20px;
 }
 
 header{
-    margin-top: 80px;
+    margin-top: 105px;
+    height: 100vh;
 }
 
 #logoImg{
     width: 60px;
+}
+
+.plansImg{
+    height: 332px;
 }
 
 .item{
@@ -225,25 +329,11 @@ img {
 .navbar-form input {
      border: none !important;
 }
-
-.badge {
-     font-weight: 500;
-}
-
-blockquote {
-     margin: 20px 0 20px;
-     padding: 30px;
-}
-
 button {
      border: 0;
      margin: 0;
      padding: 0;
      cursor: pointer;
-}
-.full {
-     float: left;
-     width: 100%;
 }
 
 .layout_padding {
@@ -253,12 +343,9 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    /* background: red; */
     height: auto;
     padding-top: 27px;
-    /* padding-bottom: 25px; */
     background-size: 100%;
-    /* padding-bottom: 201px; */
 }
 .logo {
     width: 100%;
@@ -313,12 +400,7 @@ button {
     position: relative;
     left: 0px;
 }
-.shoping_bag {
-    float: right;
-    text-align: right;
-    padding-left: 30px;
-    padding-top: 8px;
-}
+
 .togle_3 {
     float: left;
 }
@@ -335,6 +417,7 @@ button {
     padding-left: 20px;
 }
 .banner_section {
+    padding: 0;
     width: 100%;
     float: left;
 }
@@ -346,7 +429,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #181919;
+    color: #25a18e;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -357,6 +440,7 @@ button {
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 0;
 }
 .banner_text{
     width: 80%;
@@ -380,32 +464,6 @@ button {
 }
 .contact_padding{
     padding-left: 15px;
-}
-.play_icon{
-    width: 90px;
-    height: 90px;
-    float: left;
-    margin-top: 70px;
-    position: relative;
-    z-index: 3;
-}
-.play_icon a{
-    position: relative;
-    z-index: 4;
-}
-.play_icon::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    transform: translate(-50%,-50%);
-    background-color: #ffffff;
-    border-radius: 100%;
-    z-index: 2;
-    animation: fadeEffect 1.3s infinite ease;
-    box-shadow: 0px 0px 10px 0px;
 }
 
 @keyframes fadeEffect{
@@ -619,27 +677,6 @@ button {
     text-align: center;
     padding-top: 70px; 
 }
-
-.get_bt{
-    width: 170px;
-    margin: 0 auto;
-    text-align: center;
-}
-.get_bt a{
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #202020;
-    border-radius: 40px;
-    padding: 10px 0px;
-    margin-top: 30px;
-    text-transform: uppercase;
-}
-.get_bt a:hover{
-    color: #ffffff;
-    background-color: #367d99;
-}
 .team_section {
     width: 100%;
     float: left;
@@ -658,7 +695,7 @@ button {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #89cbeb;
+    color: black;
     text-align: center;
     padding-top: 15px;
 }
@@ -670,13 +707,17 @@ button {
 .follow_social_icon ul{
     margin: 0px;
     padding: 0px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 .follow_social_icon li{
+    background: white;
     float: left;
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 20px;
 }
+
 .consectetur_text {
     width: 100%;
     float: left;
@@ -686,7 +727,7 @@ button {
     text-transform: uppercase;
     padding-top: 110px;
 }
-.dummy_text{
+.dumm_text{
     width: 100%;
     float: left;
     font-size: 16px;
@@ -703,7 +744,7 @@ button {
     padding-top: 110px;
     text-align: right;
 }
-.dummy_text_1{
+.dumm_text_1{
     width: 100%;
     float: left;
     font-size: 16px;
@@ -714,7 +755,7 @@ button {
 .newsletter_section{
     width: 100%;
     float: left;
-    background-color: #89cbeb;
+    background-color: #004e64;
     height: auto;
     padding: 40px 0px;
 }
@@ -752,7 +793,7 @@ button {
     float: left;
     color: #ffffff;
     font-size: 16px;
-    background-color: #282828;
+    background-color: #25a18e;
     padding: 10px 15px;
     text-align: center;
 }
@@ -762,7 +803,7 @@ button {
 .footer_section{
     width: 100%;
     float: left;
-    background-color: rgba(0, 0, 0, 0.774);
+    background-image: url("../images/footerImg.png");
     height: auto;
     padding: 45px 0px;
 }
@@ -806,11 +847,7 @@ button {
     float: left;
     padding-top: 40px;
 }
-.map_main {
-    width: 100%;
-    float: left;
-    padding-top: 20px;
-}
+
 .email_text {
     width: 100%;
     float: left;
@@ -850,9 +887,9 @@ textarea#comment::placeholder {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #393a40;
+    color: white;
     text-align: center;
-    background-color: #89cbeb;
+    background-color: #004e64;
     padding: 10px 0px;
     text-transform: uppercase;
     border-radius: 40px;
@@ -869,39 +906,11 @@ textarea#comment::placeholder {
     padding: 0px;
     display: inline-block;
 }
-.social_icon li{
-    float: left;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.copyright_section{
-    width: 100%;
-    float: left;
-    background-color: #fefefe;
-    height: auto;
-    border-top: 2px solid #282828;
-}
-.copyright_text {
-    width: 100%;
-    float: left;
-    color: #020202;
-    text-align: center;
-    font-size: 16px;
-    margin-left: 0px;
-}
-.copyright_text a {
-    color: #020202;
-}
-.copyright_text a:hover {
-    color: #89cbeb;
-}
 
-.background_bg{
-    width: 100%;
-    float: left;
-    background: #89cbeb;
-    height: auto;
-    padding: 15px 0px;
+.copyrightContainer{
+    margin-top: 100px;
+    text-align: center;
+    color: white;
 }
 .images_main_1{
     width: 100%;

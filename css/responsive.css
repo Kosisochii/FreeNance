@@ -295,7 +295,7 @@ padding: 126px 40px;
 .services_taital {font-size: 29px; }
 .services_text { font-size: 13px; }
 .services_section_2 { padding-top: 0px; }
-.box_section { margin-top: 30px; background-color: red;}
+.box_section { margin-top: 30px;}
 .tile_text { font-size: 28px; }
 .lorem_text { font-size: 13px; }
 .image_2 { padding-top: 20px; }
@@ -436,11 +436,18 @@ ul.link li {
 .background_bg{ padding: 15px 0px 0px 0px; }
 .team_section_2 { padding-top: 20px; }
 .menu_text { padding-top: 0px; }
+}
 
+@media screen and (min-width: 500px) {
+    /* .navContainer{
+        display: none;
+    } */
 
-
-
-
-
-
+    /* .hamburger{
+        position: relative;
+        width: 100px;
+        background: white;
+        height: 100px;
+    }
+     */
 }
