@@ -438,7 +438,7 @@ ul.link li {
 .menu_text { padding-top: 0px; }
 }
 
-@media screen and (min-width: 500px) {
+/* @media screen and (min-width: 500px) { */
     /* .navContainer{
         display: none;
     } */
@@ -450,4 +450,4 @@ ul.link li {
         height: 100px;
     }
      */
-}
+/* } */
