@@ -438,7 +438,7 @@ ul.link li {
 .menu_text { padding-top: 0px; }
 }
 
- @media (min-width: 100px) and (max-width: 811px) {
+ /* @media (min-width: 100px) and (max-width: 811px) {
 
     #linkContainer{
         display: none;
@@ -447,15 +447,7 @@ ul.link li {
     .logoContainer{
     padding: 30px 30px;
     }
-
-    .waitlistContainer .left-section{
-        display: none;
-    }
-
-    .waitlistContainer .right-section{
-        padding: 10px 50px;
-    }
-}
+} */
 
 
 /* @media (min-width: 952px) and (max-width: 1600px) {
